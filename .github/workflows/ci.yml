@@ -1,0 +1,11 @@
+name: OvertAPI
+
+on: [push, pull_request]
+
+jobs:
+  sample:
+    name: Sample
+    runs-on: ubuntu-latest
+    steps:
+      - name: Output Message
+        run: echo "Running sample workflow job"

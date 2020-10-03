@@ -1,0 +1,8 @@
+{
+  "name": "athapt",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ]
+}

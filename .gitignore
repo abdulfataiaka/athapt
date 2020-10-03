@@ -1,0 +1,10 @@
+# [Misc]
+.DS_Store
+.vscode/
+
+# [Yarn]
+yarn-error.log
+
+# [Project]
+node_modules/
+
