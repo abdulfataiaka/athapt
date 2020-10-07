@@ -1,0 +1,14 @@
+{
+    "env": {
+        "node": true,
+        "es6": true
+    },
+    "parser": "espree",
+
+    "extends": [
+        "eslint:recommended",
+        "google"
+    ],
+    "rules": {
+    }
+}
