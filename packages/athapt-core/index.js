@@ -1,6 +1,6 @@
 const Boot = require('./src/boot');
-const Engine = require('./src/engine');
 const Config = require('./src/config');
+const Server = require('./src/server');
 const Parsers = require('./src/parsers');
 
 class Athapt {
@@ -13,7 +13,7 @@ class Athapt {
   }
 
   up() {
-    (new Engine(this)).up();
+    (new Server(this)).up();
   }
 }
 
