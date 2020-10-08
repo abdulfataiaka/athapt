@@ -1,27 +1,23 @@
 {
     "env": {
         "node": true,
-        "es6": true
     },
+
+     "parserOptions": { 
+        "ecmaVersion": 12 
+    }, 
     
 
     "extends": [
-        "eslint:recommended"
+        "eslint:recommended", "airbnb-base"
     ],
 
     "rules": {
-        "indent": [
-            "error",
-            "space"
-        ],
-       
+         
         "quotes": [
             "error",
             "single"
-        ],
-        "semi": [
-            "error",
-            "never"
         ]
+        
     }
 }
