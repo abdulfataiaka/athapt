@@ -1,16 +1,10 @@
 {
   "name": "athapt",
   "license": "MIT",
-
   "scripts": {
     "lint": "eslint src/**/*.js"
   },
-
   "devDependencies": {
-    "eslint": "^7.10.0",
-    "eslint-config-google": "^0.14.0"
-  },
-  "dependencies": {
-    "@babel/eslint-plugin": "^7.11.5"
+    "eslint": "^7.10.0"
   }
 }

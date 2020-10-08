@@ -3,22 +3,18 @@
         "node": true,
         "es6": true
     },
-    "parser": "espree",
+    
 
     "extends": [
-        "eslint:recommended",
-        "google"
+        "eslint:recommended"
     ],
 
     "rules": {
         "indent": [
             "error",
-            "tab"
+            "space"
         ],
-        "linebreak-style": [
-            "error",
-            "windows"
-        ],
+       
         "quotes": [
             "error",
             "single"
