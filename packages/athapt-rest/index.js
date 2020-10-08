@@ -5,11 +5,15 @@ const Response = require('./src/response');
 
 class AthaptRest extends AthaptParser {
   static request(req) {
-    (new Request(req)).parse();
+    const instance = new Request(req);
+    instance.parse();
+    return instance.request;
   }
 
   static response(result) {
-    (new Response(result)).parse();
+    const instance = new Response(result);
+    instance.parse();
+    return instance.response;
   }
 }
 

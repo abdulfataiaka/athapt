@@ -1,6 +1,6 @@
 class Request {
   constructor() {
-    this.field = 'Field';
+    this.field = 'Request Field';
   }
 }
 

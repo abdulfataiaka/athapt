@@ -1,6 +1,6 @@
 class Response {
   constructor() {
-    this.field = 'Field';
+    this.field = 'Response Field';
   }
 }
 
