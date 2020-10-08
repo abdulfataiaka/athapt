@@ -1,12 +1,9 @@
 {
-  "name": "@athapt/rest",
+  "name": "@athapt/parser",
   "version": "0.1.0",
   "main": "index.js",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
-  },
-  "dependencies": {
-    "@athapt/parser": "^0.1.x"
   }
 }
