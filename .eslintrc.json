@@ -1,0 +1,31 @@
+{
+    "env": {
+        "node": true,
+        "es6": true
+    },
+    "parser": "espree",
+
+    "extends": [
+        "eslint:recommended",
+        "google"
+    ],
+
+    "rules": {
+        "indent": [
+            "error",
+            "tab"
+        ],
+        "linebreak-style": [
+            "error",
+            "windows"
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "semi": [
+            "error",
+            "never"
+        ]
+    }
+}
