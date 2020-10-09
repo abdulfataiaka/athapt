@@ -1,19 +1,17 @@
-const express = require('express');
+import express from 'express';
 
 class Server {
   constructor(factory) {
     this.factory = factory;
-
-    this.up = this.up.bind(this);
   }
 
   get info() {
     return '\n[*] Start up actual server\n';
   }
 
-  up() {
+  listen() {
     console.log(this.info);
   }
 }
 
-module.exports = Server;
+export default Server;

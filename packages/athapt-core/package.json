@@ -5,8 +5,5 @@
   "license": "MIT",
   "publishConfig": {
     "access": "public"
-  },
-  "dependencies": {
-    "express": "^4.17.1"
   }
 }

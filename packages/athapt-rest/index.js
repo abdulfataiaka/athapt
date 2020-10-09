@@ -1,20 +1,12 @@
-const { AthaptParser } = require('@athapt/parser');
+import AthaptParser from '@athapt/core/AthaptParser';
+import Request from './src/request';
 
-const Request = require('./src/request');
-const Response = require('./src/response');
-
-class AthaptRest extends AthaptParser {
+class Parser extends AthaptParser {
   static request(req) {
-    const instance = new Request(req);
-    instance.parse();
-    return instance.request;
-  }
-
-  static response(result) {
-    const instance = new Response(result);
-    instance.parse();
-    return instance.response;
+    const parser = new Request(req);
+    parser.parse();
+    return parser.input;
   }
 }
 
-module.exports = AthaptRest;
+export default Parser;

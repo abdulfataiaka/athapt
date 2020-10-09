@@ -1,20 +1,8 @@
-const Boot = require('./src/boot');
-const Config = require('./src/config');
-const Server = require('./src/server');
-const Parsers = require('./src/parsers');
+// System Input and Output Object
+export { default as Input } from './src/specs/input';
+export { default as Output } from './src/specs/output';
 
-class Athapt {
-  constructor() {
-    this.boot = new Boot();
-    this.config = new Config();
-    this.parsers = new Parsers();
-
-    this.up = this.up.bind(this);
-  }
-
-  up() {
-    (new Server(this)).up();
-  }
-}
-
-module.exports = Athapt;
+// Request and Response Parsers
+export { default as AthaptParser } from './src/parsers/base';
+export { default as RequestParser } from './src/parsers/request';
+export { default as ResponseParser } from './src/parsers/response';
