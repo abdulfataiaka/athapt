@@ -1,5 +1,5 @@
 {
-  "name": "@athapt/core",
+  "name": "@athapt/base",
   "version": "0.1.0",
   "main": "dist/index.js",
   "license": "MIT",
@@ -8,5 +8,8 @@
   },
   "files": [
     "dist/"
-  ]
+  ],
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }

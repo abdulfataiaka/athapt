@@ -7,3 +7,6 @@ yarn-error.log
 
 # [Project]
 node_modules/
+
+# [Packages]
+dist/

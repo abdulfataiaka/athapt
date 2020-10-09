@@ -1,7 +1,7 @@
-const { RequestParser } = require('@athapt/parser');
+import RequestParser from '@athapt/core/RequestParser';
 
 class Request extends RequestParser {
   parse() { }
 }
 
-module.exports = Request;
+export default Request;
