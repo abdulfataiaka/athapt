@@ -23,6 +23,6 @@ cd $rootdir
 
 for dirname in "${packages[@]}"; do
   echo "Building package { $dirname }"
-  babel packages/$dirname --out-dir build/$dirname
+  babel packages/$dirname/src --out-dir packages/$dirname/build
   echo
 done
