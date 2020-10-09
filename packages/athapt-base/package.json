@@ -9,6 +9,9 @@
   "files": [
     "dist/"
   ],
+  "scripts": {
+    "build": "node ../../scripts/build athapt-base"
+  },
   "dependencies": {
     "express": "^4.17.1"
   }
