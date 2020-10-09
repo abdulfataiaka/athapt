@@ -1,11 +1,8 @@
 class Config {
   constructor() {
-    this.state = {};
+    this.port = 8000;
+    this.host = '127.0.0.1';
   }
-
-  port(value) {}
-
-  host(value) {}
 }
 
 export default Config;
