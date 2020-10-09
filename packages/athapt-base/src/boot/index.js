@@ -1,7 +1,5 @@
 class Boot {
-  constructor() {
-    this.registry = {};
-  }
+  registry = {};
 
   register(name, callback) {}
 }

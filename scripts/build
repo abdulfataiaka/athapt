@@ -1,0 +1,28 @@
+#!/bin/bash
+
+rootdir="$(dirname $(cd $(dirname $BASH_SOURCE) && pwd))"
+
+packages=(
+  "athapt-base"
+  "athapt-core"
+  "athapt-rest"
+)
+
+package="$1"
+
+if [ "$package" != "" ]; then
+  if [ ! -d packages/$package ]; then
+    printf "\n[!] Package folder name specified is invalid { $package }\n\n"
+    exit
+  fi
+
+  packages=("$package")
+fi
+
+cd $rootdir
+
+for dirname in "${packages[@]}"; do
+  echo "Building package { $dirname }"
+  babel packages/$dirname --out-dir build/$dirname
+  echo
+done

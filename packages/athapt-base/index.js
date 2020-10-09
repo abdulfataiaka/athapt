@@ -1,13 +1,13 @@
 import Boot from './src/boot';
 import Config from './src/config';
 import Server from './src/server';
-import Parser from './src/parser';
+import Parsers from './src/parsers';
 
 class Athapt {
   constructor() {
     this.boot = new Boot();
     this.config = new Config();
-    this.parser = new Parser();
+    this.parsers = new Parsers();
   }
 
   start() {

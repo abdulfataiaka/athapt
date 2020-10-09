@@ -1,0 +1,3 @@
+#!/bin/bash
+
+rootdir="$(dirname $(cd $(dirname $BASH_SOURCE) && pwd))"

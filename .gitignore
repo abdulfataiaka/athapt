@@ -6,4 +6,7 @@
 yarn-error.log
 
 # [Project]
+/build
 node_modules/
+
+# [Packages]
