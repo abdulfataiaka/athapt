@@ -1,11 +1,14 @@
 {
   "name": "@athapt/base",
   "version": "0.1.0",
-  "main": "index.js",
+  "main": "dist/index.js",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
+  "files": [
+    "dist/"
+  ],
   "dependencies": {
     "express": "^4.17.1"
   }

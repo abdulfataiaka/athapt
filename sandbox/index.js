@@ -1,4 +1,4 @@
-import Athapt from '@athapt/base';
+const { default: Athapt } = require('@athapt/base');
 
 const server = new Athapt();
 

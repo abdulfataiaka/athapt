@@ -1,11 +1,14 @@
 {
   "name": "@athapt/rest",
   "version": "0.1.0",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
+  "files": [
+    "dist/"
+  ],
   "dependencies": {
     "@athapt/core": "0.1.0"
   }

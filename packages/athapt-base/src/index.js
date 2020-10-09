@@ -1,7 +1,7 @@
-import Boot from './src/boot';
-import Config from './src/config';
-import Server from './src/server';
-import Parsers from './src/parsers';
+import Boot from './boot';
+import Config from './config';
+import Server from './server';
+import Parsers from './parsers';
 
 class Athapt {
   constructor() {

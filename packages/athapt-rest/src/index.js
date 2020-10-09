@@ -1,5 +1,5 @@
 import AthaptParser from '@athapt/core/AthaptParser';
-import Request from './src/request';
+import Request from './request';
 
 class Parser extends AthaptParser {
   static request(req) {

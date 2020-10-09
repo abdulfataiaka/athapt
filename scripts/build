@@ -1,6 +1,7 @@
 #!/bin/bash
 
 rootdir="$(dirname $(cd $(dirname $BASH_SOURCE) && pwd))"
+cd $rootdir
 
 packages=(
   "athapt-base"
@@ -19,10 +20,8 @@ if [ "$package" != "" ]; then
   packages=("$package")
 fi
 
-cd $rootdir
-
 for dirname in "${packages[@]}"; do
   echo "Building package { $dirname }"
-  babel packages/$dirname/src --out-dir packages/$dirname/build
+  babel packages/$dirname/src --out-dir packages/$dirname/dist
   echo
 done
