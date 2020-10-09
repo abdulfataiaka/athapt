@@ -6,7 +6,7 @@ class RequestParser {
    * Input object builder expected to be different
    * for each request interface
    * 
-   * @param {*} req
+   * @param {HttpRequest} req
    */
   constructor(req) {
     this.req = req;
