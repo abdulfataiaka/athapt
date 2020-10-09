@@ -1,0 +1,40 @@
+#!/bin/bash
+
+BABEL="./node_modules/.bin/babel"
+
+function confirm_package_name {
+  local name="$1"
+
+  if [ ! -d packages/$name ]; then
+    printf "\n[!] No package folder found with name { $name } specified\n\n"
+    exit
+  fi
+}
+
+function set_global_packages {
+  local name="$1"
+
+  if [ ! -z $name ]; then
+    confirm_package_name $name
+    PACKAGES=("$name")
+  else
+    PACKAGES=(
+      "athapt-base"
+      "athapt-core"
+      "athapt-rest"
+    )
+  fi
+}
+
+function unset_global_packages {
+  PACKAGES=()
+}
+
+function build_package_command {
+  printf "[ $1 ] ";
+  $BABEL packages/$1/src --out-dir packages/$1/dist
+}
+
+function release_package_command {
+  printf "[ $1 ] Released."
+}

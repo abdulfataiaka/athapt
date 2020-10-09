@@ -1,17 +1,21 @@
 #!/bin/bash
 
-rootdir="$(dirname $(cd $(dirname $BASH_SOURCE) && pwd))"
-cd $rootdir
+ROOTDIR="$(dirname $(cd $(dirname $BASH_SOURCE) && pwd))"
 
-package="$1"
+cd $ROOTDIR
 
-if [ "$package" == "" ] || [ ! -d packages/$package ]; then
-  printf "\n[!] Package folder name specified is invalid { $package }\n\n"
-  exit
-fi
+source scripts/support
 
-yarn build $package
+# BEGIN
 
-printf "Publishing package to NPM { $package }\n"
-# Add publish code here
+set_global_packages $1
+
+for package in "${PACKAGES[@]}"; do
+  echo
+  build_package_command $package
+  release_package_command $package
+  echo
+done
 echo
+
+unset_global_packages
