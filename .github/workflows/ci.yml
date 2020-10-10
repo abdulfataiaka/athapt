@@ -1,4 +1,4 @@
-name: OvertAPI
+name: Workflow
 
 on: [push, pull_request]
 
