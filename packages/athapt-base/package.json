@@ -10,7 +10,7 @@
     "dist/"
   ],
   "scripts": {
-    "build": "node ../../scripts/build athapt-base"
+    "build": "node ../../scripts/build --pkg athapt-base"
   },
   "dependencies": {
     "express": "^4.17.1"
