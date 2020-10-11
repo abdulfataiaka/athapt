@@ -1,6 +1,9 @@
 {
   "name": "athapt",
   "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
     "lint": "eslint src/**/*.js"
   },
